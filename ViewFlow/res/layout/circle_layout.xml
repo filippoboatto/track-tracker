@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/org.taptwo.android.widget.viewflow.example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pluto" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="80dp" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <org.taptwo.android.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dip"
+                app:fadeOut="1000"
+                app:inactiveType="fill" />
+
+            <org.taptwo.android.widget.ViewFlow
+                android:id="@+id/viewflow"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:sidebuffer="3" >
+            </org.taptwo.android.widget.ViewFlow>
+        </FrameLayout>
+    </FrameLayout>
+
+</AbsoluteLayout>
